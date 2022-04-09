@@ -1,26 +1,29 @@
-body{
-    background-image: url(bg.png);
-    height: 3000px;
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#div1, #div2{
-    width: 500px;
-    height: 700px;
+main {
+    display: flex;
+    min-height: 60vh;
 }
 
-#div1{
-    background-color: blue;
+main >article {
+    flex-grow: 1;
 }
 
-#div2 {
-    background-color: green;
+main > nav, main > aside {
+    flex: 0 20vw;
+    background-color: antiquewhite;
+
 }
 
-#div3 {
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-    position: sticky;
-    bottom: 30px;
-    top: 30px;
+header, footer {
+    background-color: #444;
+    height: 20vh;
+}
+
+header, footer, article, nav, aside {
+    padding: 20px;
 }

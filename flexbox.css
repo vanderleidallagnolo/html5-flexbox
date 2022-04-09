@@ -1,0 +1,89 @@
+/* padronizar documento - cross browser  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap:wrap; */
+    /* height: 400px; */
+    flex-flow: row nowrap;
+    height: 500px;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+
+    align-items: center;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+    align-content: stretch;
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+
+
+}
+
+div {
+    /* height: 120px; */
+    /* width: 120px; */
+    /* width: 25%; */
+    /* width: 22%; */
+    /* width: 30%; */
+    width: 20%;
+    border: dotted 2px black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+}
+
+/* #div1 { order: 3; }
+#div2 { order: 5; }
+#div3 { order: 2; }
+#div4 { order: 1; }
+#div5 { order: 7; }
+#div6 { order: 4; }
+#div7 { order: 6; } */
+
+#div1,
+#div3,
+#div7 {
+    /* height: 150px; */
+}
+
+/* div {
+    flex-grow: 1;
+} */
+
+/* #div3 {
+    flex-grow: 2;
+} */
+
+
+#div3 {
+    /* flex-shrink: 3; */
+    /* flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 200px; */
+
+    flex: 0 0 200px;
+
+    /* align-self: flex-end; */
+    align-self: flex-start;
+}
+
+/* #div5 {
+    flex-grow: 0.5;
+} */
